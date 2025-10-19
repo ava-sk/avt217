@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+#bigcolumn {
+	margin-left: 300px;
+	margin-right: 300px;
+	background-color: lavender;
+	padding: 50px;
+}
+
+body {
+	background-color:#484C98;  
+	font-family: "Tagesschrift";
+	font-weight: 400;
+	color:#6A507F;
+}
+
+
+
+#flexbox {
+	background-color:#CBCBE4;
+	padding: 20px;
+	padding-top: 5px;
+	margin-left: 50px;
+	margin-right: 50px;
+	
+}
+
+h1 {
+	font-family: "Anton";
+	font-weight: 200;
+	color: #413E57;
+	letter-spacing: 4px;
+}
+
+h4 {
+	font-weight:600;
+	letter-spacing: 2px;
+	color: #413E57;
+}
+
+ul {
+	color: #8146B4;
+	
+}
+
+
+
+
+
+
