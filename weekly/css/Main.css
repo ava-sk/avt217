@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body {
+	background-color:#4C588C;
+
+}
+
+
+#wrapper {
+	color:aliceblue;
+	background-color: #38488C;
+	margin: 0px;
+	padding: 5px;
+	font-family: "caprasimo";
+}
+
+.weekly {
+	background-color: #6F85E3;
+	position:absolute;
+	left: 400px;
+	font-size: 150%;
+	padding: 10px
+}
+
+.project {
+	background-color: #6F85E3;
+	position:absolute;
+	left: 1000px;
+	font-size: 150%;
+	padding: 10px
+}
+h1 {
+	font-weight: 300;
+	
+}
