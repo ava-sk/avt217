@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+  body {
+    text-align: center;
+    background:url("../img/thumb-1920-853895.png") no-repeat center center fixed;
+ -webkit-background-size: cover;
+	  -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#container {
+margin-top:40vh;
+  }
+
+p {
+    text-transform: uppercase;
+    font-family: "Metal Mania";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 600%;
+    color: #F53232;
+}
+  
+/* tell browser don't display it when screen is wider than 768px */
+  .mobile-only {
+    display: none;
+  }
+
+
+@media only screen and (max-width: 768px) {
+body {
+ background-image: none;
+background-color: darkgoldenrod;
+    }
+	
+     p {
+font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+	 color:maroon;
+	align-content: center;
+	margin-bottom: 0;
+    }
+	  
+	#cursive {
+	font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+	font-size: 6em;
+	 color:maroon;
+	align-content: center;
+	margin-top: 0;
+  	}
+	  
+    .mobile-only {
+   display:block;
+    }
+	  /* Now the style and content for desktop will not be displied */
+    .desktop-only {
+  display:none;
+    }
+
+} /* don't forget to close the styles for mobile/
+	 
+	  /* Now the style and content for desktop will not be displied */
+
+	  
+	  
+	  
+	  
