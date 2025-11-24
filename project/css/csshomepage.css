@@ -1,0 +1,541 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+#homepage{
+ background-image: url("../DHimg/nocturnal-bloodlust.jpg"); 
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment: scroll;
+ height: calc(100vw * 0.667);
+	min-height: 100vh;
+  position: relative;
+image-resolution: auto;
+}
+/* General Body */
+body {
+  color: #fff;
+}
+
+/* BAND NAME */
+.Nocturnal {
+  position: absolute;
+  top: 0;
+  left:3%;
+  font-family: 'Metal Mania', system-ui;
+  font-size: 13vw;
+  font-weight: 100;
+	letter-spacing: 18px; 
+  color: #FFFFFF;
+  line-height: 0.9;
+	
+  
+}
+
+.Bloodlust {
+  position: absolute;
+  top: 16%;
+  left: 14%;
+  font-family: 'Metal Mania', system-ui;
+  font-size: 10.3vw;
+  font-weight:100;
+	letter-spacing: 12px;
+  color: #FFFFFF;
+  line-height:0.9;
+	
+  
+}
+
+/* LOCATION TEXT */
+.location {
+  position: absolute;
+  bottom: 0.8%;
+  left: 3%;
+  font-size: 1.6rem;
+  font-family: 'Metal Mania', system-ui;
+	letter-spacing: 2px;
+}
+
+/* RIGHT MENU */
+.right-menu {
+  position: absolute;
+  bottom:2%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+	align-items: flex-end;
+	background-color: transparent;
+}
+
+.menu-btn {
+  background-color: #184B80;
+  color: #D7DFEB;
+  padding: 4px 20px 4px 25px;
+  text-decoration: none;
+  font-family: 'Metal Mania', cursive;
+  font-size: 4rem;
+	text-align: right;
+}
+
+glow-button {
+  background-color: #62A6BB;
+  color:#62A6BB;
+  padding: 10px 20px;
+  border: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Add a smooth transition for the glow effect */
+  transition: box-shadow 1.3s, background-color 0.3s;
+}
+
+.glow-button:hover {
+  /* Create the glow effect */
+  background-color: #62A6BB;
+  box-shadow: 0 0 30px #62A6BB, 0 0 30px #62A6BB;
+}
+
+button{
+	border-width: 0px;
+	color: transparent;
+	
+}
+/* SOCIAL ICONS */
+.social-icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+.social-icons img {
+  width: 60px;
+  height: 60px;
+display: block;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+  filter: none; /* show true colors */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #62A6BB, 0 0 50px #62A6BB
+}
+
+.social-btn {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+button.glow-button2 {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+button.glow-button2:hover {
+  box-shadow: 0 0 25px #62A6BB, 0 0 50px #62A6BB;
+}
+
+button.glow-button2:focus,
+button.glow-button2:active,
+button.glow-button2:hover {
+  background: none !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #62A6BB;
+   font-family: "Metal", serif;
+  letter-spacing: 0.5px;
+}
+
+
+
+/*--------------------------------------------------------------------------------*/
+
+
+/*About Us Css*/
+
+#About {
+	background-color:#31374A;
+	height: 2800px;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Header */
+.Aboutheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.The-Band {
+  font-family: 'Metal Mania';
+  font-size: 100px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  color: #D7DFEB;
+  left: 40px;
+  position: relative;
+}
+
+/* Navigation */
+.nav-menu {
+  position: relative;
+}
+
+.nav-menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+ position:relative;
+	right:39px;
+}
+
+.nav-menu-icon div {
+  width: 90px;
+  height: 15px;
+  background-color: #616495;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Dropdown Menu */
+.navmenudropdown {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  background-color: #184B80;
+  border: 6px solid #62A6BB;
+  border-radius: 8px;
+  width: 297px;
+  z-index: 1000;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(-10px);
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, max-height 0.3s ease;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navmenudropdown.show {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px; 
+}
+
+.navmenudropdown li {
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+}
+
+.navmenudropdown li a {
+  color: #D7DFEB;
+  text-decoration: none;
+  font-family: 'Metal Mania';
+  font-weight: 400;
+  font-size: 48px;
+  transition: color 0.3s ease;
+}
+
+.navmenudropdown li a:hover {
+  color: #62A6BB;
+}
+
+
+/* Intro Text */
+.intro {
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal; 
+  text-align: left;
+  width: 1279px;
+  font-size: 18px;
+  color: #62A6BB;
+  position: relative;
+	left: 80px;
+	top: 0;
+}
+
+
+/* Members Section */
+.members {
+  padding: 2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.members-title {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 1rem;
+  top: 8rem;
+  font-family: 'Metal', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  letter-spacing: 4px;
+  color: #616495;
+}
+
+.members-list {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-left: 5rem;
+}
+
+.member img {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  border: 10px ridge #616495;
+}
+
+.member h3 {
+  margin-top: 0.5rem;
+  font-family: 'Metal Mania';
+  font-weight: 400;
+  color: #62A6BB;
+  font-size: 48.6px;
+}
+
+/* Band Info Section */
+.band-info2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4rem;
+  gap: 6rem;
+}
+
+.band-info2 p {
+  flex: 1;
+  font-size: 30px;
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal; 
+  text-align: left;
+  color:#D7DFEB;
+}
+
+.band-image1 {
+  flex: 0.8;
+  object-fit: cover;
+  border: 4px solid #616495;
+}
+
+/* Gallery */
+.gallery {
+  margin: 6rem 1rem 1rem 1rem;
+}
+
+
+.gallery-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+	 align-items: center;
+}
+
+.gallery-row img {
+  border: 4px solid #616495;
+object-fit: cover;	
+}
+
+.band-info3 {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem 4rem;
+  gap: 4rem;
+}
+	
+ .band-info3 p {
+  flex: 1;
+  font-size: 30px;
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal; 
+  text-align: left;
+  color:#D7DFEB;
+}
+		
+.gallery-row img.band-image2 {
+	width: 659px;
+	height:528px;
+	flex: 0 0 auto;
+}
+
+.gallery-row img.band-image3 {
+	width: 1133px;
+	height:550px;
+	flex: 0 0 auto;
+}
+
+.band-image4 {
+	width:829px;
+	height: 548px;
+	flex: 0 0 auto;
+	position: relative;
+	object-fit: cover;
+	border: 4px solid #616495;
+}
+
+/* Footer */
+.Afooter {
+  text-align: center;
+  background-color: #616495;
+  color: #D7DFEB;
+  font-size: 0.9rem;
+  padding: 1rem;
+  font-style: italic;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+
+
+/*Muisc Css*/
+#Discography {
+	background: #31374A;
+	height: 3000px;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.Music {
+  font-family: 'Metal Mania';
+  font-size: 100px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  color: #D7DFEB;
+  left: 40px;
+  position: relative;
+}
+
+
+
+
+
+
+/* Footer */
+.Mfooter {
+  text-align: center;
+  background-color: #616495;
+  color: #D7DFEB;
+  font-size: 0.9rem;
+  padding: 1rem;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+
+
+/*Tour Css*/
+#Tour {
+	background: #616495;
+	height: 3000px;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.Tour {
+  font-family: 'Metal Mania';
+  font-size: 100px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  color: #D7DFEB;
+  left: 40px;
+  position: relative;
+}
+
+
+
+
+
+
+/* Footer */
+.tfooter {
+  text-align: center;
+  background-color: #184B80;
+  color: #62A6BB;
+  font-size: 0.9rem;
+  padding: 1rem;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
