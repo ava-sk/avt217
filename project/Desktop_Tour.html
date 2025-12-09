@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>p3.4:  Fourth page</title>
+	<link rel="stylesheet" href="css/csshomepage.css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metal&family=Metal+Mania&family=Metamorphous&family=Metrophobic&display=swap" rel="stylesheet" href="css/csshomepage.css">
+</head>
+
+<body>
+	
+	<section id="Tour">
+	<!-- Header -->
+	<header class="altheader">
+		<div class="Tourheader">
+	<h1 class="Tour">Nocturnal Bloodlust | 2026 Tour</h1>
+		 <p class="presenting">Presenting...</p>
+			<div class="aftermath-title">The<span>AFTERMATH</span>Tour</div>
+   		 <p class="one-man">-ONE MAN TOUR-</p>
+		<p class="tickets-now">- - - GET YOUR TICKETS NOW - - -</p>
+		</div>
+	<nav class="navigation2">
+		<div class="nav-menu2">
+			<div class="nav-menu-icon2" onclick="toggleMenu()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="navmenudropdown2" id="navmenudropdown2">
+			<li><a href="Desktop_Homepage.html">Home</a></li>
+			<li><a href="Desktop_About.html">About</a></li>
+			<li><a href="Desktop_Music.html">Discography</a></li>
+			<li><a href="Desktop_Tour.html">2026 Tour</a></li>
+			</ul>
+		</div>
+		</nav>
+		</header>
+		
+		
+		
+<!-- SIDE BARS -->
+<div class="side-left"></div>
+<div class="side-right"></div>
+	
+		
+<!-- TOUR BOX -->
+<section class="tour-box">
+
+<!-- Dates -->
+<div class="dates">
+	<p>2025<br>12/14</p>
+	<p>2026<br>01/17</p>
+	<p>2026<br>01/24</p>
+	<p>2026<br>02/07</p>
+	<p>2026<br>02/08</p>
+	<p>2026<br>02/22</p>
+	<p>2026<br>03/08</p>
+</div>
+		
+<!-- Middle Content Box -->
+<div class="tour-content">
+
+	<div class="row">
+		<div class="venue">Shibuya Club Asia <span>(clubasia)</span></div>
+		<button class="ticket sold" disabled aria-label="Sold out">SOLD OUT</button>
+	</div>
+
+	<div class="row">
+		<div class="venue">Music Lab 演書房 <span>(Music Lab. Hama Shobo)</span></div>
+		<button class="ticket few" aria-label="Very few tickets left">Very Few Left</button>
+	</div>
+
+	<div class="row">
+		<div class="venue">柏 DOME <span>(DOMe Kashiwa)</span></div>
+		<button class="ticket few" aria-label="Very few tickets left">Very Few Left</button>
+	</div>
+
+	<div class="row">
+		<div class="venue">IMAIKE 3STARS <span>(CLUB3STAR)</span></div>
+		<button class="ticket available" aria-label="Tickets available">Available</button>
+	</div>
+
+	<div class="row">
+		<div class="venue">心斎橋 VARON <span>(Shinsaibashi VARON)</span></div>
+		<button class="ticket available" aria-label="Tickets available">Available</button>
+	</div>
+
+	<div class="row">
+		<div class="venue">湘南 BIT <span>(Live House Shonan bit)</span></div>
+		<button class="ticket available" aria-label="Tickets available">Available</button>
+	</div>
+
+	<div class="row">
+		<div class="venue">新宿 ANTIKNOCK <span>(Shinjuku ANTIKNOCK)</span></div>
+		<button class="ticket available" aria-label="Tickets available">Available</button>
+	</div>
+
+	<p class="future-msg">-Future dates/venues are still being decided-</p>
+
+</div>
+
+
+<!-- Cities -->
+<div class="cities">
+	<p>Tokyo,<br>Japan</p>
+	<p>Yokohama,<br>Japan</p>
+	<p>Kashiwa,<br>Japan</p>
+	<p>Imaike,<br>Japan</p>
+	<p>Osaka,<br>Japan</p>
+	<p>Fujisawa,<br>Japan</p>
+	<p>Shinjuku,<br>Japan</p>
+</div>
+
+</section>	
+
+
+
+ <!-- Footer -->
+<footer class="tfooter">
+	<p>© 2025 Nocturnal Bloodlust and Maverick Records. All Rights Reserved.</p>
+	</footer>
+
+</section>
+	
+	
+<script>
+	function toggleMenu() {
+    const menu = document.getElementById("navmenudropdown2"); 
+    menu.classList.toggle("show");
+}
+
+
+document.addEventListener("click", function(event) {
+    const menu = document.getElementById("navmenudropdown2");
+    const icon = document.querySelector(".nav-menu-icon2");
+    if (!icon.contains(event.target) && !menu.contains(event.target)) {
+        menu.classList.remove("show");
+    }
+});
+
+</script>
+</body>
+</html>
